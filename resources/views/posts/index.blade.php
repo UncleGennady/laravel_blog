@@ -11,14 +11,14 @@
             {{ session('status') }}
         </x-notification>
     @endif
-    <x-h1>
-        {{ __('Blog h1') }}
+    <x-h1 class="text-center animeTitle">
+        {{ __('LizSharm Blog') }}
     </x-h1>
     <div>
         <ul class="row list-unstyled">
             @foreach ($posts as $post)
                 <li class="col-12 col-md-6 col-lg-4 d-flex flex-column gap-2 align-items-center mb-3">
-                    <x-card :post="$post" />
+                    <x-card class="animeCard" :post="$post" />
                 </li>
             @endforeach
         </ul>
@@ -49,3 +49,7 @@
         </ul>
     </nav>
 @endsection
+
+@pushOnce('js')
+    <script src="/js/anime.js"></script>
+@endPushOnce

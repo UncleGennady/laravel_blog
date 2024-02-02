@@ -19,3 +19,15 @@
     top: 15px;
     left: 15px;
 }
+
+.anime {
+    opacity: 0;
+}
+
+.animeCard {
+    opacity: 0;
+}
+.animeTitle {
+    opacity: 0;
+}
+

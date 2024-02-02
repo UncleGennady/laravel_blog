@@ -1,4 +1,4 @@
-<div class="card">
+<div {{ $attributes->class(['card']) }}>
     {{-- <img src=" {{ asset('storage/' . $post->images[rand(0, count($post->images) - 1)]) }}" class="card-img-top"
         alt="..."> --}}
     <img src=" {{ asset('storage/' . $post->images[0]) }}" class="card-img-top" alt="...">
